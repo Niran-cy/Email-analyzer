@@ -7,7 +7,9 @@ from email.policy import default
 import re
 
 app = FastAPI()
-
+@app.get("/")
+async def root():
+    return {"status": "online", "message": "SOC Email Analysis Engine Core is Operational"}
 # This tells the backend it is allowed to talk to your HTML file
 app.add_middleware(
     CORSMiddleware,
