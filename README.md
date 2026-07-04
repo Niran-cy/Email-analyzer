@@ -3,7 +3,6 @@
 An advanced, enterprise-grade Security Operations Center (SOC) web application engineered to ingest, parse, and triage malicious email artifacts in real-time. This application features a decoupled full-stack architecture that extracts deep header metadata, parses multi-vector payload links, and leverages global threat intelligence feeds to deliver automated security verdicts.
 
 Live: `https://niran-cy.github.io/Email-analyzer/`
-Live Backend Core: `https://email-analyzer-yzh1.onrender.com`
 
 ---
 
@@ -39,9 +38,4 @@ Live Backend Core: `https://email-analyzer-yzh1.onrender.com`
 * Python 3.8+ installed locally.
 * A valid VirusTotal API Key.
 
-### 1. Cloud Backend Configuration (Render)
-The backend is configured to build dynamically using a decoupled package tree via `requirements.txt`:
-```text
-fastapi
-uvicorn
-requests
+
