@@ -25,7 +25,7 @@ async function analyzeEmail() {
     
     try {
         // CALLING YOUR LIVE PYTHON BACKEND
-        const response = await fetch(`https://email-analyzer-yzh1.onrender.com/`, {
+        const response = await fetch(`https://email-analyzer-yzh1.onrender.com/analyze-full-email/`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email_content: emailText })
