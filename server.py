@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # ⚠️ ENTER YOUR REAL VIRUSTOTAL API KEY HERE
-VIRUSTOTAL_API_KEY = "e5c37f95e8066f5e48172ee58837db1fae94c9cb5f0bac5ea7269a7eac10a73c"
+VIRUSTOTAL_API_KEY = "YOUR_VIRUSTOTAL_API_KEY_HERE"
 
 @app.post("/analyze-full-email/")
 async def analyze_full_email(request: Request):
